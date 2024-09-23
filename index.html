@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning HTML</title>
+</head>
+
+<br>
+
+<p>hello, students <strong>This is a bold tag</strong> </p>
+
+<h1>Heading 1</h1>
+<h1> HTML Forms</h1>
+
+<br>
+
+<form action="">
+
+    <!-- ordinary text-field forms -->
+
+    <label for="username">Enter username:</label>
+    <input type="text" id="username" name="username" placeholder="username" required>
+    </br></br>
+    <label for="email">Enter Email:</label>
+    <input type="email" id="email" name="email" placeholder="email" required>
+    </br></br>
+    <label for="password">Enter password:</label>
+    <input type="password" id="password" name="password" placeholder="password" required>
+
+    <p>Select Your age:</p>
+
+    <!-- radio button forms  -->
+
+    <input type="radio" name="age" value="0-25" id="option-1">
+    <label for="option-1">0-25</label> </br>
+
+    <input type="radio" name="age" value="26-50" id="option-2">
+    <label for="option-2">26-50</label> <br>
+
+    <input type="radio" name="age" value="51+" id="option-3">
+    <label for="option-3">51+</label>
+
+    <br><br>
+
+    <!-- Select dropdown forms  -->
+
+    <label for="question">Security question:</label>
+    <select name="question" id="question">
+        <option value="q1">What colour are your favourite pair of socks?</option>
+        <option value="q1">What is your favourite pet name?</option>
+        <option value="q1">What is your favourite childhood actor?</option>
+    </select>
+
+
+    <!-- Textfield for the answer for the security questions -->
+    <br><br>
+
+    <label for="answer">Security Question Answer:</label>
+    <input type="text" id="answer" name="answer">
+
+
+    <br><br>
+
+    <!-- Text area is for large number of texts -->
+
+    <label for="bio">Your Bio: </label><br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+    <br><br>
+
+    <!--Submit button  -->
+
+    <input type="submit" value="submit form">
+
+</form>
+
+
+</body>
+
+</html>
