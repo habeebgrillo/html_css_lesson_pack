@@ -142,7 +142,7 @@ for dropdowns in a form
 ===
 text area
 ============
-
+<label for="bio">Your Bio:</label>                                                           <!--You can have a label for bio which will help direct the user to type in -->
 <textarea name="bio" id="bio" cols="30" rows="10" placaholder="about you..."></textarea>    <!-- Text area tag is for large number of texts --> <!-- cols and rows is how wide or how long you want it to be displayed, it can also be changed using css --> <!-- placeholder attribute is used as text suggestion in the textarea box, and it is displayed to the user and disappears when user starts to type and it can be added to input tags as well-->
 
 
