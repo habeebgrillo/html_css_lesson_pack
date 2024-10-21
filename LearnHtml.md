@@ -193,3 +193,161 @@ this is called selectors------->    div{ <!-- whatever is between the curly brac
 this is called selectors------->    li{
                                         font-weight: bold;
                                     }
+
+<head>          <!-- it is possible to have the css in the top part, in the head tags of the html page or to be linked in a separate file   -->
+    <style>
+        h1 {
+            color: aqua;
+        }
+        p {
+            color: blue;
+        }
+        li {
+            color: brown;
+        }
+    </style>
+    <title>Learning HTML/CSS</title>
+</head>
+
+
+<head>
+    <link rel="stylesheet" href="style.css">     <!-- or it can be linked with the "link" tag and accessed using the file name, rel= relation which means(stylesheet) and the href is the path to the actual file-->
+    <title>Learning HTML/CSS</title>
+</head>
+
+
+Selector e.g {
+    color: orange;                   <!-- will change the colour of the h1(selector)  -->
+    background-color: slategray;     <!-- will change the background colour and set it to slategray -->
+    font-size: 20px;                 <!-- will change the font-size and set it to 20 pixels -->
+    text-decoration: underline;      <!-- will add an underline to the text -->
+    font-family: arial;              <!-- will use a global font stlye called arial -->
+    text-align: center;              <!-- aligns text to the centre --> 
+
+    line-height: 30px;               <!-- sets vertical spacing between different lines in texts --> 
+    letter-spacing: 1px              <!-- sets spacing between letters --> <!--  -->
+    column-count: 3;                 <!-- makes the text or element and set into 3 columns -->
+    column-gap: 60px;                <!-- makes the text or element have a gap between each columns -->
+
+   
+    The
+}
+
+ul{
+    border-width: 4px;               <!-- will set the width of the selector to 4px --> 
+    border-style: solid;             <!-- border-width has to work with border-style to be able to see the border-->
+    border-color: crimson;           <!-- sets the colour of the border-->
+    
+    border: 4px solid crimson;         <!-- The easier and shorter way to do the above, by combining the values to border -->
+    border-bottom: 4px dotted crimson; <!-- sets only the bottom of the border -->
+    border-left: 4px solid crimson;    <!-- sets only the left hand of the border -->
+    border-left: 4px dotted crimson;   <!-- sets the top part of the border-->
+}
+
+li{
+    list-style-type: none;            <!-- this will set the style of the list items to none, or square or disc  -->
+}
+
+ITs better to use Web Safe Fonts so that everyone on the internet can have access to that particular font, refer to w3schools to learn more.
+
+====
+CSS Colours/Hex Code
+====================
+Hex codes are specific colours, starts with # and are 6 digits, combination of 0-9 digits and a-f letters
+
+        42(R-red) f4(G-green) f1(B-blue)
+        channel    channel     channel
+                    R G B
+
+0- represents the darkest shade     #000000 (Black)
+F- represents the lightest shade    #ffffff (White) 
+
+====
+Inline Elements
+================
+- Dont take up any more room more than their content needs
+- span, img, strong, em, a and more..
+
+These tags will sit side by side and will not take up the whole width inline block-level elements
+ <!--these are all inline, will stay on the same line in the browse and do not take the full width-->
+
+    <span>span tag</span>
+    <em>em tag</em>
+    <a href="">anchor tag</a>
+    <span>span tag</span>
+
+it is poss
+
+====
+Block Level Elements
+================
+- Take up the whole width of a page regardless of the content
+- p, div, h2, h3, ul, li and more...
+
+They will start on a new line and take the whole width of the page
+<!--these are all block-level, will take a new line in the browser and they take the full width-->
+
+    <div>div tag</div>
+    <div>another div tag</div>
+    <h3>h3 tag</h3>    <!-- all Heading tags -->
+    <p>paragraph tag</p>
+    <ul>
+        <li>li tag</li>
+        <li>another li tag</li>
+    </ul>
+
+=====
+Note:
+=====
+- on Developer mode on the browser, you can check the under "Styles", and find "user agent stylesheet", this sets a default for block-level elements or any other default element will be under "user agent stylesheet" by the browser.
+- 
+- But
+
+it is possible to change an inline element tag into a block-level and vice versa using
+e.g refer to above code to understand the context in line 274 
+span{
+    display: block;     <!-- this will make it behave like a block-level element-->
+}
+div{
+    display: inline;    <!-- this will make it behave like an inline element-->
+}
+
+
+=====
+Margin & Padding
+================
+-Margin allows us to specify the margin or space outside of the element border
+
+-Padding allows us to control the internal space within the element
+
+-Block-level elements can have margin and padding all around of it.
+
+-Inline elements can only have margin on left or right side of it and have padding all around it.
+
+
+====
+NOTE
+====
+
+- Inline elements can have padding collapse, it will add the two paddings and go ontop of each other, vertically , for examples when the screen gets smaller, so we need to watch out for this.
+ 
+- Block-level elements can have margin collapse, it can squash them together into one, instead of separate margins
+ 
+
+To fix both of these problems, we can use a flex-display type called "inline-block"
+====
+e.g 
+span{
+    display: inline-block;  <!-- it can make padding and margin work better and it will not make it collapse --> 
+}
+
+
+
+===
+Default Browser Styles
+======================
+- can be seen inside the Console of the browser
+
+
+
+Summary
